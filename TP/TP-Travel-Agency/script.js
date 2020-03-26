@@ -45,7 +45,7 @@ function is_filled(field) {
 //Fonction de verification du format de mail
 function check_mail(field) {
     var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; //EXPLICATION DE LA REGEX EN BAS DE DOCUMENT
-    if (regex.test(field.value))
+    if (regex.test(field.value)) //On verifie que la value du champs email corresponde bien a la Regex
         return true;
     else {
         field.style.borderColor = "red"; //Ajout d'une bordure de couleur pour guider l'utilisateur
